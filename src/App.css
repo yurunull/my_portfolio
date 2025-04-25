@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "HannariMincho-Regular";
+  src: url("../fonts/HannariMincho-Regular.otf") format("woff2");
+}
+
+@font-face {
+  font-family: 'DigitalClock';
+  src: url('./fonts/DS-DIGI.TTF') format('truetype');
+}
+
+
+.pop {
+  font-family: "HannariMincho-Regular", sans-serif;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffeaf4, #fbffc2); /*グラデーション */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loading.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#loading-screen {
+  width: 200px;
+  height: 200px;
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid #ffa9e2; /* ピンク色のボーダー */
+  border-radius: 50%;
+  background: url("./images/logo.png") no-repeat center center; /* 花柄の画像を背景に設定 */
+  background-size: cover; /* 画像をまるく */
+  animation: spin 1.5s linear infinite;
+}
+
+#loading p {
+  position: absolute;
+  top: calc(50% + 100px);
+  font-size: 1.5rem;
+  font-family: "TOKAngle", sans-serif; /* フォントをTOKAngleに変更 */
+  color: #ffa9e2;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.532); /* 文字に影をつけて立体感を出す */
+  animation: bounce 2s infinite ease-in-out; /* バウンスアニメーション */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* バウンス効果 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .relative {
+    flex-direction: column-reverse; /* 小さい画面では縦に並べる */
+    justify-content: flex-start;
+  }
+}
+
+

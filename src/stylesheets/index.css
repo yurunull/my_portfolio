@@ -1,0 +1,56 @@
+/* 文字触れるとピンク */
+a {
+  font-weight: 500;
+  color: #ffa9e2;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ffa9e2;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ffa9e2;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+a.btn--pink {
+  color: #976653; /* テキスト色を白に設定 */
+  background: #f5c4c8; /* 背景色をピンクに設定 */
+  border-bottom: 5px solid #f2a7a3; /* ピンクに近い色で境界線 */
+  display: inline-block; /* ボタンとしてのブロック要素化 */
+  padding: 0.6em 1.2em; /* パディングを調整 */
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.25s ease; /* トランスフォームにトランジションを設定 */
+}
+
+a.btn--pink:hover {
+  transform: translateY(3px); /* ホバー時にボタン本体を下に移動 */
+  color: #ffffff; /* ホバー時の文字色 */
+  background: #f2a7a3; /* 背景色をそのまま保持 */
+  border-bottom: 2px solid #ff1493; /* ホバー時の境界線色 */
+}
+
+
+

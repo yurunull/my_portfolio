@@ -17,10 +17,10 @@ import { ChevronLeft, ChevronRight, Volume2, VolumeX } from "lucide-react";
 
 
 const images = [
-  { src: AizuHack, label: "#Aizu Hack_logo" },
-  { src: Beginner, label: "#Beginner's Hackathon_poster" },
-  { src: AizuHack_poster, label: "#Aizu Hack_poster" },
-  { src: ReAizuHack, label: "#Re:Aizu Hack_logo" },
+  { src: AizuHack, label: "#Aizu Hack logo" },
+  { src: Beginner, label: "#Beginner's Hackathon poster" },
+  { src: AizuHack_poster, label: "#Aizu Hack poster" },
+  { src: ReAizuHack, label: "#Re:Aizu Hack logo" },
 ];
 
 const VideoSlideshow = () => {

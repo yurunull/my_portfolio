@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import "./stylesheets/index.css";  
 import { BrowserRouter, Route, Routes } from "react-router-dom"; // BrowserRouter → HashRouter
 import PortfolioHeader from "./compoments/header";
 import PortfolioFooter from "./compoments/footer";

@@ -171,13 +171,18 @@ const Home = () => {
         </h2>
         <hr className="border-t-2 border-gray-300 my-12" />
 
-        <p className="text-[1.5vw] ml-[3%] text-gray-500 -mt-2 mb-8">Movie(3)</p>
+        <p className="text-[1.5vw] ml-[3%] text-gray-500 -mt-2 mb-8">
+          Movie(3)
+        </p>
 
         <div className="w-full flex flex-col items-center gap-8">
           <VideoSlideshow />
 
           {isFullScreen && (
-            <div className="relative flex items-center mt-4 justify-end ml-auto" style={{ marginTop: "-800px" }}>
+            <div
+              className="relative flex items-center mt-4 justify-end ml-auto"
+              style={{ marginTop: "-800px" }}
+            >
               <img
                 src={Recode}
                 alt="Recode Background"
@@ -192,7 +197,9 @@ const Home = () => {
                       style={{
                         transformOrigin: "0 150px",
                         animationDelay: `${index * 0.6}s`,
-                        transform: `rotate(${index * (360 / 8)}deg) translateX(200px)`,
+                        transform: `rotate(${
+                          index * (360 / 8)
+                        }deg) translateX(200px)`,
                       }}
                     >
                       {char}
@@ -209,7 +216,9 @@ const Home = () => {
           )}
         </div>
 
-        <p className="text-[1.5vw] ml-[3%] text-gray-500 mt-16 mb-8">design(4)</p>
+        <p className="text-[1.5vw] ml-[3%] text-gray-500 mt-16 mb-8">
+          design(4)
+        </p>
 
         <div className="flex justify-center px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-[1600px] w-full">
@@ -272,10 +281,29 @@ const Home = () => {
             />
           </div>
           <div className="w-full md:w-2/3">
-            <p className="text-gray-700 text-lg leading-relaxed">
-              こんにちは！私は会津大学の学生で、ハッカソンやデザイン制作を中心に活動しています。
-              プログラミングとクリエイティブな表現を通して、色々なことにチャレンジするのが大好きです！
-            </p>
+            <div className="w-full md:w-2/3 text-[1.3rem] md:text-[2.1rem] leading-relaxed font-HANNARI tracking-wide">
+              <p className="mb-4">
+                はじめまして、ゆるりと申します。
+                <br />
+                会津大学の学部2年で、プログラミングを中心に日々学んでいます。
+                <br />
+                カフェ巡りや「どうぶつの森」が好きで、気ままに楽しみながら、自分の「好き」を表現することが好きです。
+                デザインやAIにも興味があり、このポートフォリオもその一つとして、楽しみながら制作しました。
+              </p>
+              <p>
+                現在は、React・JavaScript・Pythonを中心に勉強中です。
+                <br />
+                少しずつ成長しながら、これからも楽しんで学び続けたいと考えています。
+              </p>
+              <div className="absolute bottom-[-10] right-20 text-right mt-4">
+                <a
+                  href="/about"
+                  className="text-Light_blue md:w-2/3 text-[1.3rem] md:text-[2.1rem] hover:underline"
+                >
+                  About more →
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

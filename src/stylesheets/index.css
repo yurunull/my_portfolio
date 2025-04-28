@@ -52,5 +52,20 @@ a.btn--pink:hover {
   border-bottom: 2px solid #ff1493; /* ホバー時の境界線色 */
 }
 
+/* index.cssまたはApp.cssに追加 */
+@keyframes float {
+  0% {
+    transform: translateY(-100%); /* 上から落ちる初期位置 */
+  }
+  100% {
+    transform: translateY(400vh); /* 画面下に落ちる最終位置 */
+  }
+}
+
+.animate-float {
+  animation: float 12s infinite ease-in-out;
+}
+
+
 
 

@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css"; // 必要なCSSをインポート
 
 function Animation() {
   const leaves = [

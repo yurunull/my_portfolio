@@ -165,7 +165,7 @@ const Home = () => {
       </div>
 
       {/* My Work Section */}
-      <section className="relative px-8 py-4">
+      <section className="relative px-8 py-4 mt-16">
         <h2 className="text-Light_blue text-[2.8vw] ml-[6%] font-bold mt-8 font-HANNARI">
           My Work
         </h2>
@@ -181,7 +181,7 @@ const Home = () => {
           {isFullScreen && (
             <div
               className="relative flex items-center mt-4 justify-end ml-auto"
-              style={{ marginTop: "-800px" }}
+              style={{ marginTop: "-650px" }}
             >
               <img
                 src={Recode}
@@ -216,11 +216,11 @@ const Home = () => {
           )}
         </div>
 
-        <p className="text-[1.5vw] ml-[3%] text-gray-500 mt-16 mb-8">
+        <p className="text-[1.5vw] ml-[3%] text-gray-500 mt-24 mb-8">
           design(4)
         </p>
 
-        <div className="flex justify-center px-4">
+        <div className="flex justify-center px-4 mt-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-[1600px] w-full">
             {images.map((img, index) => (
               <div

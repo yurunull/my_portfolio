@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../images/logo.png"; // ロゴ画像のインポート
+import Logo from "../../public/images/logo.png"; // ロゴ画像のインポート
 import "../stylesheets/index.css";
 import "../tailwind.css?url";
 import { FaMinus } from "react-icons/fa";

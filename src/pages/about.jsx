@@ -1,5 +1,5 @@
 import React from "react";
-import Yururi from "../images/yururi.png";
+import Yururi from "../../public/images/yururi.png";
 import {
   FaJs,
   FaPython,

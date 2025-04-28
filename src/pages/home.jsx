@@ -10,8 +10,8 @@ import Beginner from "../../public/images/Beginner.png";
 import Movie from "../../public/images/night.mp4";
 import Movie2 from "../../public/images/seikou_sound.mp4";
 import Movie3 from "../../public/images/mistake_sound.mp4";
-import "../tailwind.css?url";
-import "../App.css";
+import "../../public/tailwind.css?url";
+import "../../public/App.css";
 import { ChevronLeft, ChevronRight, Volume2, VolumeX } from "lucide-react";
 
 const images = [

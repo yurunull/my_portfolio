@@ -1,5 +1,6 @@
 import React from "react";
-import "./App.css"; // 必要なCSSをインポート
+import "../public/App.css";
+import "../public/index.css";
 
 function Animation() {
   const leaves = [

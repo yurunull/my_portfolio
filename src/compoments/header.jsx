@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../public/images/logo.png"; // ロゴ画像のインポート
-import "../stylesheets/index.css";
-import "../tailwind.css?url";
+import "../../public/index.css";
+import "../../public/tailwind.css?url";
 import { FaMinus } from "react-icons/fa";
 import { CgMenuCake } from "react-icons/cg";
 import { Link } from "react-router-dom"; // Linkをインポート

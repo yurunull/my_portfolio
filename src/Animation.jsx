@@ -14,10 +14,10 @@ function Animation() {
       {leaves.map((choco, i) => (
         <div
           key={i}
-          className="choco absolute top-[-15%] w-6 h-6 text-4xl opacity-70 animate-Float z-0"
+          className="choco absolute top-[-10%] w-6 h-6 text-4xl opacity-70 animate-float z-0"
           style={{
             left: choco.left,
-            animationDelay:choco.delay,
+            animationDelay: choco.delay,
           }}
         >
           🍫

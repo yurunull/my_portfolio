@@ -39,7 +39,7 @@ const PortfolioHeader = () => {
             <ul className="flex flex-col md:flex-row md:ml-auto space-y-2 md:space-y-0 md:space-x-8 text-2xl text-Light_blue">
               <li>
                 <Link
-                  to="/#home" // ハッシュ付きURL
+                  to="/" // ハッシュ付きURL
                   className="btn btn--pink btn--emboss btn--cubic py-3 px-6 rounded-md hover:border-b-2 hover:border-[#ff1493] active:translate-y-1 transition-all duration-200"
                 >
                   Home
@@ -47,7 +47,7 @@ const PortfolioHeader = () => {
               </li>
               <li>
                 <Link
-                  to="/#about" // ハッシュ付きURL
+                  to="/about" // ハッシュ付きURL
                   className="btn btn--pink btn--emboss btn--cubic py-3 px-6 rounded-md hover:bg-[#ff80bf] hover:border-b-2 hover:border-[#ff1493] active:scale-95 transition-all duration-200"
                 >
                   About
@@ -55,7 +55,7 @@ const PortfolioHeader = () => {
               </li>
               <li>
                 <Link
-                  to="/#contact" // ハッシュ付きURL
+                  to="/contact" // ハッシュ付きURL
                   className="btn btn--pink btn--emboss btn--cubic py-3 px-6 rounded-md hover:bg-[#ff80bf] hover:border-b-2 hover:border-[#ff1493] active:scale-95 transition-all duration-200"
                 >
                   Contact
@@ -69,13 +69,13 @@ const PortfolioHeader = () => {
       {/* モバイル用ナビゲーション（開いたときだけ表示） */}
       {menuOpen && (
         <nav className="md:hidden mt-10 space-y-2 text-2xl text-[#f5c4c8] flex flex-col items-start">
-          <Link to="/#home" className="btn w-full">
+          <Link to="/home" className="btn w-full">
             Home
           </Link>
-          <Link to="/#about" className="btn w-full">
+          <Link to="/about" className="btn w-full">
             About
           </Link>
-          <Link to="/#contact" className="btn w-full">
+          <Link to="/contact" className="btn w-full">
             Contact
           </Link>
         </nav>

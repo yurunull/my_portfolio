@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <PortfolioHeader />
         <div className="relative min-h-screen overflow-hidden">
           <Animation />
           <main className="relative z-10">

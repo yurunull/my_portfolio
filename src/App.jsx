@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom"; // BrowserRouter → HashRouter
 import PortfolioHeader from "./compoments/header";
 import PortfolioFooter from "./compoments/footer";
 import Home from "./pages/home";
@@ -13,20 +13,19 @@ function App() {
 
   return (
     <>
-      <PortfolioHeader />
-      <div className="relative min-h-screen overflow-hidden">
-        <Animation />
-        <main className="relative z-10">
-          <BrowserRouter>
+      <BrowserRouter>
+        <div className="relative min-h-screen overflow-hidden">
+          <Animation />
+          <main className="relative z-10">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
-          </BrowserRouter>
-        </main>
-      </div>
-      <PortfolioFooter />
+          </main>
+        </div>
+        <PortfolioFooter />
+      </BrowserRouter>
     </>
   );
 }

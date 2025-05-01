@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../../public/images/logo.png";
-import "../../public/index.css";
-import "../../public/tailwind.css?url";
+import "../index.css";
+import "../tailwind.css?url";
 import { FaMinus, FaSun, FaCloud, FaCloudRain, FaSnowflake } from "react-icons/fa";
 import { CgMenuCake } from "react-icons/cg";
 import { Link } from "react-router-dom";

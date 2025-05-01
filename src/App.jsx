@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../public/App.css";
-import "../public/index.css";  
+import "./App.css";
+import "./index.css";  
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PortfolioHeader from "./compoments/header";
 import PortfolioFooter from "./compoments/footer";

@@ -167,7 +167,7 @@ const Home = () => {
 
       {/* My Work Section */}
       <section className="relative px-8 py-4 mt-16">
-        <h2 className="text-Light_blue text-[7vw] ml-[6%] font-bold mt-8 font-HANNARI">
+        <h2 className="text-Light_blue text-[5vw] ml-[6%] font-bold mt-8 font-HANNARI">
           My Work
         </h2>
         <hr className="border-t-2 border-Light_brown my-12" />
@@ -269,7 +269,7 @@ const Home = () => {
 
       {/* About Me Section */}
       <section className="px-8 py-16">
-        <h2 className="text-Light_blue text-[7vw] ml-[6%] font-bold font-HANNARI">
+        <h2 className="text-Light_blue text-[5vw] ml-[6%] font-bold font-HANNARI">
           About Me
         </h2>
         <hr className="border-t-2 border-Light_brown my-12" />

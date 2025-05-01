@@ -57,7 +57,7 @@ const VideoSlideshow = () => {
   const currentVideo = videoList[currentIndex];
 
   return (
-    <div className="bg-white/90 backdrop-blur-sm border border-gray-300 rounded-xl shadow-xl overflow-hidden w-[90vw] sm:w-[640px] mx-auto">
+    <div className="bg-white/90 backdrop-blur-sm border border-Light_brown rounded-xl shadow-xl overflow-hidden w-[90vw] sm:w-[640px] mx-auto">
       <div className="relative aspect-video">
         {currentVideo.isExternal ? (
           <iframe
@@ -167,10 +167,10 @@ const Home = () => {
 
       {/* My Work Section */}
       <section className="relative px-8 py-4 mt-16">
-        <h2 className="text-Light_blue text-[3.8vw] ml-[6%] font-bold mt-8 font-HANNARI">
+        <h2 className="text-Light_blue text-[7vw] ml-[6%] font-bold mt-8 font-HANNARI">
           My Work
         </h2>
-        <hr className="border-t-2 border-gray-300 my-12" />
+        <hr className="border-t-2 border-Light_brown my-12" />
 
         <p className="text-[1.5vw] ml-[3%] text-gray-500 -mt-2 mb-8">
           Movie(3)
@@ -269,10 +269,10 @@ const Home = () => {
 
       {/* About Me Section */}
       <section className="px-8 py-16">
-        <h2 className="text-Light_blue text-[3.8vw] ml-[6%] font-bold font-HANNARI">
+        <h2 className="text-Light_blue text-[7vw] ml-[6%] font-bold font-HANNARI">
           About Me
         </h2>
-        <hr className="border-t-2 border-gray-300 my-12" />
+        <hr className="border-t-2 border-Light_brown my-12" />
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="w-full md:w-1/3 flex justify-center">
             <img

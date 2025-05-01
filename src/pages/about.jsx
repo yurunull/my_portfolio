@@ -18,10 +18,10 @@ const About = () => {
       <div>
         <div className="px-6 md:px-12 py-12 bg-white text-gray-800">
           {/* 見出し */}
-          <h2 className="text-Light_blue text-[2.8vw] font-bold font-HANNARI mb-4">
+          <h2 className="text-Light_blue text-[7vw] font-bold font-HANNARI mb-4">
             About Me
           </h2>
-          <hr className="border-t-2 border-gray-300 mb-12" />
+          <hr className="border-t-2 border-Light_brown mb-12" />
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             {/* 左：プロフィール写真 */}

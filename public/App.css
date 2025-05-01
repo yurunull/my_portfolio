@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "HannariMincho-Regular";
-  src: url("../fonts/HannariMincho-Regular.otf") format("woff2");
+  src: url("../src/fonts/HannariMincho-Regular.otf") format("woff2");
 }
 
 @font-face {
   font-family: 'DigitalClock';
-  src: url('./fonts/DS-DIGI.TTF') format('truetype');
+  src: url('../src/fonts/DS-DIGI.TTF') format('truetype');
 }
 
 

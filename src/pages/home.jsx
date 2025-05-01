@@ -12,7 +12,7 @@ import Movie2 from "../../public/images/seikou_sound.mp4";
 import Movie3 from "../../public/images/mistake_sound.mp4";
 import "../tailwind.css?url";
 import "../App.css";
-import "../Index.css";
+import "../index.css";
 import { ChevronLeft, ChevronRight, Volume2, VolumeX } from "lucide-react";
 
 const images = [

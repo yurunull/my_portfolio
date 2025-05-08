@@ -281,7 +281,7 @@ const Home = () => {
             />
           </div>
           <div className="w-full md:w-2/3">
-            <div className="w-full md:w-2/3 text-[1.3rem] md:text-[2.1rem] leading-relaxed font-HANNARI tracking-wide">
+            <div className="w-full md:w-2/3 text-[1.3rem] md:text-[2.1rem] leading-relaxed font-HANNARI tracking-wide mb-20">
               <p className="mb-4">
                 はじめまして、ゆるりと申します。
                 <br />
@@ -295,7 +295,7 @@ const Home = () => {
                 <br />
                 少しずつ成長しながら、これからも楽しんで学び続けたいと考えています。
               </p>
-              <div className="absolute bottom-0 right-[60px] md:right-[200px] text-right mt-4">
+              <div className="mb-5 absolute bottom-0 right-[60px] md:right-[200px] text-right mt-4">
                 <a
                   href="/about"
                   className="text-Light_blue md:w-2/3 text-[1.3rem] md:text-[2.1rem] hover:underline"

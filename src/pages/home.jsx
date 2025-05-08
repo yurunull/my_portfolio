@@ -166,41 +166,40 @@ const Home = () => {
       </div>
 
       {/* My Work Section */}
-      <section className="relative px-8 py-4 mt-16">
-        <h2 className="text-Light_blue text-[4vw] ml-[6%] font-bold mt-8 font-HANNARI">
+      <section className="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-2">
+        <h2 className="text-Light_blue text-2xl sm:text-6xl font-bold font-HANNARI mt-12 ml-[3%]">
           My Work
         </h2>
-        <hr className="border-t-2 border-Light_brown my-12" />
+        <hr className="border-t-2 border-pink-400 my-6" />
 
-        <p className="text-[2.0vw] ml-[3%] text-gray-500 -mt-2 mb-8">
+        <p className="text-[2.0vw] ml-[3%] text-gray-500 mt-24 mb-8">
           Movie(3)
         </p>
-
-        <div className="w-full flex flex-col items-center gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
           <VideoSlideshow />
 
           {isFullScreen && (
             <div
               className="relative flex items-center mt-4 justify-end ml-auto"
-              style={{ marginTop: "-650px" }}
+              style={{ marginTop: "-350px" }}
             >
               <img
                 src={Recode}
                 alt="Recode Background"
                 className="opacity-50 max-w-[500px] max-h-[500px] rounded-lg"
               />
-              <div className="absolute top-[26%] left-[47.5%] z-10 pointer-events-none text-[1.7vw]">
-                <div className="relative w-[300px] h-[300px]">
-                  {Array.from("My work").map((char, index) => (
+              <div className="absolute top-[32%] left-[48%] z-10 pointer-events-none text-[1.7vw]">
+                <div className="relative w-[270px] h-[300px]">
+                  {Array.from("my work").map((char, index) => (
                     <span
                       key={index}
-                      className="absolute text-white animate-orbit top-20"
+                      className="absolute text-white animate-orbit top-24"
                       style={{
-                        transformOrigin: "0 150px",
+                        transformOrigin: "0 140px",
                         animationDelay: `${index * 0.6}s`,
                         transform: `rotate(${
                           index * (360 / 8)
-                        }deg) translateX(200px)`,
+                        }deg) translateX(130px)`,
                       }}
                     >
                       {char}
@@ -211,7 +210,7 @@ const Home = () => {
               <img
                 src={RecodeTop}
                 alt="Recode Top"
-                className="absolute top-[-12px] left-3 max-w-[500px] max-h-[500px] rounded-lg z-20"
+                className="absolute top-[80px] left-10 max-w-[500px] max-h-[500px] rounded-lg z-20"
               />
             </div>
           )}
@@ -268,11 +267,11 @@ const Home = () => {
       </section>
 
       {/* About Me Section */}
-      <section className="px-8 py-16">
-        <h2 className="text-Light_blue text-[4vw] ml-[6%] font-bold font-HANNARI">
+      <section className="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-2">
+        <h2 className="text-Light_blue text-2xl sm:text-6xl font-bold font-HANNARI mt-12 ml-[3%]">
           About Me
         </h2>
-        <hr className="border-t-2 border-Light_brown my-12" />
+        <hr className="border-t-2 border-pink-300 my-6" />
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="w-full md:w-1/3 flex justify-center">
             <img
@@ -296,7 +295,7 @@ const Home = () => {
                 <br />
                 少しずつ成長しながら、これからも楽しんで学び続けたいと考えています。
               </p>
-              <div className="absolute bottom-[-10] right-20 text-right mt-4">
+              <div className="absolute bottom-0 right-[60px] md:right-[200px] text-right mt-4">
                 <a
                   href="/about"
                   className="text-Light_blue md:w-2/3 text-[1.3rem] md:text-[2.1rem] hover:underline"

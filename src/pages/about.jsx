@@ -16,12 +16,12 @@ const About = () => {
   return (
     <>
       <div>
-        <div className="px-6 md:px-12 py-12 bg-white text-gray-800">
+        <div className="px-6 md:px-10 py-10 bg-white text-gray-800 max-w-6xl mx-auto">
           {/* 見出し */}
-          <h2 className="text-Light_blue text-[5vw] font-bold font-HANNARI mb-4">
-            About Me
-          </h2>
-          <hr className="border-t-2 border-Light_brown mb-12" />
+          <h2 className="text-Light_blue text-2xl sm:text-6xl font-bold font-HANNARI mt-12 mb-4 ml-[3%]">
+          About Me
+        </h2>
+          <hr className="border-t-2 border-pink-300 mb-12" />
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             {/* 左：プロフィール写真 */}
@@ -145,7 +145,10 @@ const About = () => {
               <div className="flex items-center p-6 rounded-lg border-2 border-Light_blue">
                 <div className="px-6 py-3 rounded-full border-2 border-Light_blue flex items-center justify-center">
                   <h4 className=" text-[1.2rem] md:text-[2.1rem] font-semibold text-brown-600 flex items-center">
-                    <span className="mr-3  text-[1.2rem] md:text-[2.1rem]">💻</span> Skill
+                    <span className="mr-3  text-[1.2rem] md:text-[2.1rem]">
+                      💻
+                    </span>{" "}
+                    Skill
                   </h4>
                 </div>
                 <ul className="ml-10  text-[1.2rem] md:text-[2.1rem] text-brown-600 font-HANNARI space-y-3 max-w-full">
@@ -180,7 +183,10 @@ const About = () => {
               <div className="flex items-center p-6 rounded-lg border-2 border-Light_blue">
                 <div className="px-3 py-3 rounded-full border-2 border-Light_blue flex items-center justify-center">
                   <h4 className=" text-[1.2rem] md:text-[2.1rem] font-semibold text-brown-600 flex items-center">
-                    <span className="mr-3  text-[1.2rem] md:text-[2.1rem]">📘</span> Learning
+                    <span className="mr-3  text-[1.2rem] md:text-[2.1rem]">
+                      📘
+                    </span>{" "}
+                    Learning
                   </h4>
                 </div>
                 <ul className="ml-7  text-[1.1rem] md:text-[2.1rem] text-brown-600 font-HANNARI space-y-3">

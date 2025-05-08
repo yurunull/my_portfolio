@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdEmail } from 'react-icons/md';
-import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa'; // ← FaGithub に変更！
+import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Contact = () => {
     const ContactItem = ({ icon: Icon, label, text, link, color }) => (
@@ -25,7 +25,7 @@ const Contact = () => {
 
     return (
         <div className="max-w-xl mx-auto mt-12 p-4 px-4 sm:px-8 rounded-3xl border border-Light_blue shadow-xl">
-            <h1 className="text-4xl font-extrabold text-Light_blue mb-6 text-center">Contact Us</h1>
+            <h1 className="text-4xl font-extrabold text-Light_blue mb-6 text-center">Contact Me</h1>
             <p className="mb-6 text-center text-lg text-gray-600">お気軽にご連絡ください</p>
             <ul className="space-y-5">
                 <ContactItem

@@ -2,30 +2,36 @@ import React, { useState, useEffect } from "react";
 import Logo from "../../public/images/logo.png";
 import "../index.css";
 import "../tailwind.css?url";
-import { FaMinus, FaSun, FaCloud, FaCloudRain, FaSnowflake } from "react-icons/fa";
+import {
+  FaMinus,
+  FaSun,
+  FaCloud,
+  FaCloudRain,
+  FaSnowflake,
+} from "react-icons/fa";
 import { CgMenuCake } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
 const PortfolioHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [weather, setWeather] = useState('');
-  const [forecastDate, setForecastDate] = useState('');
+  const [weather, setWeather] = useState("");
+  const [forecastDate, setForecastDate] = useState("");
 
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const cityCode = '070010';
-        const url = 'https://weather.tsukumijima.net/api/forecast';
+        const cityCode = "070010";
+        const url = "https://weather.tsukumijima.net/api/forecast";
         const response = await axios.get(url, { params: { city: cityCode } });
         const data = response.data;
 
         if (data.forecasts && data.forecasts.length > 0) {
           let weatherInfo = data.forecasts[0].telop || "";
-          if (weatherInfo.includes('のち')) {
-            weatherInfo = weatherInfo.split('のち')[1].trim();
-          } else if (weatherInfo.includes('時々')) {
-            weatherInfo = weatherInfo.split('時々')[0].trim();
+          if (weatherInfo.includes("のち")) {
+            weatherInfo = weatherInfo.split("のち")[1].trim();
+          } else if (weatherInfo.includes("時々")) {
+            weatherInfo = weatherInfo.split("時々")[0].trim();
           }
           setWeather(weatherInfo);
           setForecastDate(data.forecasts[0].date);
@@ -42,7 +48,7 @@ const PortfolioHeader = () => {
   }, []);
 
   const renderWeatherIcon = () => {
-    const iconStyle = { color: 'pink' };
+    const iconStyle = { color: "pink" };
     switch (true) {
       case weather.includes("晴"):
         return <FaSun size={30} style={iconStyle} />;
@@ -62,8 +68,13 @@ const PortfolioHeader = () => {
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* ロゴ・天気アイコン */}
         <div className="absolute left-4 top-4 flex items-center space-x-6">
-          <img src={Logo} alt="Logo" className="h-10 w-auto md:h-20" />
-          <p className="text-Light_brown text-xl md:text-4xl font-HANNARI">YURURI</p>
+          <Link to="/" className="flex items-center space-x-2">
+            <img src={Logo} alt="Logo" className="h-10 w-auto md:h-20" />
+            <p className="text-Light_brown text-xl md:text-4xl font-HANNARI">
+              YURURI
+            </p>
+          </Link>
+
           {renderWeatherIcon()}
         </div>
 
@@ -95,9 +106,15 @@ const PortfolioHeader = () => {
       {/* ナビゲーション（モバイル） */}
       {menuOpen && (
         <nav className="md:hidden mt-10 space-y-2 text-2xl text-[#f5c4c8] flex flex-col items-start">
-          <Link to="/" className="btn w-full">Home</Link>
-          <Link to="/about" className="btn w-full">About</Link>
-          <Link to="/contact" className="btn w-full">Contact</Link>
+          <Link to="/" className="btn w-full">
+            Home
+          </Link>
+          <Link to="/about" className="btn w-full">
+            About
+          </Link>
+          <Link to="/contact" className="btn w-full">
+            Contact
+          </Link>
         </nav>
       )}
     </header>

@@ -127,7 +127,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    const handleResize = () => setIsFullScreen(window.innerWidth >= 1980);
+    const handleResize = () => setIsFullScreen(window.innerWidth >= 1920);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

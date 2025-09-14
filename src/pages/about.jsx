@@ -19,8 +19,8 @@ const About = () => {
         <div className="px-6 md:px-10 py-10 bg-white text-gray-800 max-w-6xl mx-auto">
           {/* 見出し */}
           <h2 className="text-Light_blue text-2xl sm:text-6xl font-bold font-HANNARI mt-12 mb-4 ml-[3%]">
-          About Me
-        </h2>
+            About Me
+          </h2>
           <hr className="border-t-2 border-pink-300 mb-12" />
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
@@ -130,9 +130,19 @@ const About = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <div className="text-xl text-Light_brown font-medium">
+                      2025.9
+                    </div>
+                    <div className="text-lg text-gray-700">
+                      "RSS Hackathon 2025 Beyond" 奨励賞受賞
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <div className="text-xl text-Light_brown font-medium">
                       2025
                     </div>
-                    <div className="text-lg text-gray-700">現在</div>
+                    <div className="text-lg text-gray-700">
+                      現在
+                    </div>
                   </div>
                 </div>
               </div>

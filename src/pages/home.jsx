@@ -172,6 +172,27 @@ const Home = () => {
         </h2>
         <hr className="border-t-2 border-pink-400 my-6" />
 
+        <p className="text-[2.0vw] ml-[3%] text-gray-500 mt-24 mb-8">Web(1)</p>
+        <div>
+          <iframe
+            id="inline-frame"
+            className="w-full aspect-video rounded-lg border"
+            src="https://rss-hackathon.vercel.app/"
+            title="Embedded RSS Hackathon Project"
+            allowFullScreen
+          ></iframe>
+
+          <p className="mt-2 text-center">
+            <a
+              href="https://rss-hackathon.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              「RSS Hackathon 2025 Beyond」制作物はこちら
+            </a>
+          </p>
+        </div>
         <p className="text-[2.0vw] ml-[3%] text-gray-500 mt-24 mb-8">
           Movie(3)
         </p>
